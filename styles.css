@@ -1,0 +1,141 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, orange 25%, transparent 25%) 0 0,
+                linear-gradient(90deg, orange 25%, transparent 25%) 0 50%,
+                linear-gradient(90deg, orange 25%, transparent 25%) 0 100%;
+    background-size: 50px 100%, 50px 100%, 50px 100%;
+    background-color: orange;
+    background-repeat: repeat-y;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Container styles */
+.container {
+    margin-top: 60px; /* Adjusted to account for navbar height */
+    text-align: center;
+}
+
+/* Cookie image styles */
+#cookie {
+    width: 100px; /* Adjust as needed */
+    transform: rotate(90deg); /* Rotate the image 90 degrees clockwise */
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)); /* Add shadow effect */
+    cursor: pointer;
+}
+
+/* Multiplier image styles */
+#multiplier-image {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)); /* Add shadow effect */
+}
+
+/* Button styles */
+.button {
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Sidebar styles */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+#sidebar h2 {
+    margin-top: 0;
+}
+
+#sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin-bottom: 10px;
+}
+
+#sidebar ul li img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Trigger area styles */
+#sidebar-trigger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px; /* Width of the trigger area */
+    height: 100%;
+    cursor: pointer;
+    z-index: 1100; /* Ensure it's above other content */
+}
+
+/* Unique visitors counter styles */
+#unique-visitors {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1000;
+}
+

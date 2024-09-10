@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="multipliers.html">Multipliers</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Cookie Clicker Clone</h1>
+        <div class="cookie-container">
+            <img id="cookie" src="cheeto-puff.png" alt="Cheeto Puff">
+        </div>
+        <div class="stats">
+            <p>Cheetos: <span id="cookie-count">0</span></p>
+            <div class="current-multiplier">
+                <img id="multiplier-image" src="" alt="Multiplier Image">
+                <p>Current Multiplier: <span id="current-multiplier">Cursor</span></p>
+                <p>Warning: We have an anti-cheat so do NOT autoclick or you will be banned!s</p>
+                <p>Cost: <span id="multiplier-cost">10</span></p>
+            </div>
+        </div>
+        <button id="buy-multiplier" class="button">Buy Next Multiplier (Cost: 10)</button>
+        <button id="reset-button" class="button">Reset Game</button>
+    </div>
+    <div id="sidebar">
+        <h2>Available Multipliers</h2>
+        <ul id="multiplier-list"></ul>
+    </div>
+    <div id="sidebar-trigger"></div> <!-- Trigger area for sidebar -->
+    <div id="unique-visitors">
+        Page Opened: <span id="unique-devices">0</span>
+    </div>
+    <script src="scripts.js"></script>
+    <script src="banmanager.js"></script>
+</body>
+</html>

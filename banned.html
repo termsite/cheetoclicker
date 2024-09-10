@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banned</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        input { margin: 10px; }
+        button { padding: 10px 20px; }
+    </style>
+</head>
+<body>
+    <h1>Access Denied</h1>
+    <p>You have been banned from this site.</p>
+    <p id="ban-info"></p>
+    
+    <div id="unban-section">
+        <input type="text" id="unban-key" placeholder="Enter unban key">
+        <button onclick="attemptUnban()">Unban</button>
+        <p id="unban-message"></p>
+    </div>
+
+    <script>
+        let UnBanKey = 'ask owner for key you fucking bum stop trying to find it.';
+        const banTimeKey = 'ban_time';
+        const banKey = 'click_ban';
+        const bantime = '130183716';
+        const currentTime = Date.now();
+        const banEndTime = localStorage.getItem(banTimeKey);
+        const banInfo = document.getElementById('ban-info');
+        const unbanMessage = document.getElementById('unban-message');
+
+        if (banEndTime) {
+            const remainingTime = Math.max(0, (banEndTime - currentTime) / 60000); // in minutes
+            banInfo.textContent = `You will be unbanned in ${Math.ceil(remainingTime)} minutes.`;
+        } else {
+            banInfo.textContent = "Your ban information is unavailable.";
+        }
+
+        function attemptUnban() {
+            const enteredKey = document.getElementById('unban-key').value.trim();
+            if (enteredKey === bantime) {
+                localStorage.removeItem(banKey);
+                localStorage.removeItem(banTimeKey);
+                unbanMessage.textContent = "You have been unbanned. Redirecting...";
+                setTimeout(() => {
+                    window.location.href = 'index.html'; // Redirect to the main page or wherever you want
+                }, 2000); // Redirect after 2 seconds
+            } else {
+                unbanMessage.textContent = "Incorrect key. Please try again.";
+            }
+        }
+    </script>
+</body>
+</html>
