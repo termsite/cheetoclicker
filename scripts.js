@@ -1,6 +1,6 @@
 // Initialize multipliers with their respective costs, multipliers, and image URLs
 const multipliers = [
-    { name: 'Cursor', cost: 10, multiplier: 1, image: 'cursor.png' },
+    { name: 'Cursor', cost: 10, multiplier: 1, image: 'images/cursor.png' },
     { name: 'Fat Baby', cost: 100, multiplier: 2, image: 'images/fat-baby.png' },
     { name: 'Chubby Kid', cost: 1_000, multiplier: 3, image: 'images/chubby-kid.png' },
     { name: 'Discord Kitten', cost: 10_000, multiplier: 5, image: 'images/discord-kitten.png' },
