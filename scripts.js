@@ -1,17 +1,17 @@
 // Initialize multipliers with their respective costs, multipliers, and image URLs
 const multipliers = [
-    { name: 'Cursor', cost: 10, multiplier: 1, image: '/cursor.png' },
-    { name: 'Fat Baby', cost: 100, multiplier: 2, image: 'fat-baby.png' },
-    { name: 'Chubby Kid', cost: 1_000, multiplier: 3, image: 'chubby-kid.png' },
-    { name: 'Discord Kitten', cost: 10_000, multiplier: 5, image: 'discord-kitten.png' },
-    { name: 'iPad Kid', cost: 100_000, multiplier: 10, image: 'ipad-kid.png' },
-    { name: 'Discord Mod', cost: 1_000_000, multiplier: 20, image: 'discord-mod.png' },
-    { name: '1000lb Sisters', cost: 10_000_000, multiplier: 50, image: '1000lb-sisters.png' },
-    { name: 'Chandler', cost: 100_000_000, multiplier: 100, image: 'chandler.png' },
-    { name: 'Hacker', cost: 1_000_000_000, multiplier: 200, image: 'hacker.png' },
-    { name: 'JavaScript Console', cost: 10_000_000_000, multiplier: 500, image: 'javascript-console.png' },
-    { name: 'Blackhole', cost: 100_000_000_000, multiplier: 1000, image: 'blackhole.png' },
-    { name: 'YOU', cost: 1_000_000_000_000, multiplier: 2000, image: 'you.png' }
+    { name: 'Cursor', cost: 10, multiplier: 1, image: 'cursor.png' },
+    { name: 'Fat Baby', cost: 100, multiplier: 2, image: 'images/fat-baby.png' },
+    { name: 'Chubby Kid', cost: 1_000, multiplier: 3, image: 'images/chubby-kid.png' },
+    { name: 'Discord Kitten', cost: 10_000, multiplier: 5, image: 'images/discord-kitten.png' },
+    { name: 'iPad Kid', cost: 100_000, multiplier: 10, image: 'images/ipad-kid.png' },
+    { name: 'Discord Mod', cost: 1_000_000, multiplier: 20, image: 'images/discord-mod.png' },
+    { name: '1000lb Sisters', cost: 10_000_000, multiplier: 50, image: 'images/1000lb-sisters.png' },
+    { name: 'Chandler', cost: 100_000_000, multiplier: 100, image: 'images/chandler.png' },
+    { name: 'Hacker', cost: 1_000_000_000, multiplier: 200, image: 'images/hacker.png' },
+    { name: 'JavaScript Console', cost: 10_000_000_000, multiplier: 500, image: 'images/javascript-console.png' },
+    { name: 'Blackhole', cost: 100_000_000_000, multiplier: 1000, image: 'images/blackhole.png' },
+    { name: 'YOU', cost: 1_000_000_000_000, multiplier: 2000, image: 'images/you.png' }
 ];
 
 let cookies = localStorage.getItem('cookies') ? parseInt(localStorage.getItem('cookies')) : 0;
